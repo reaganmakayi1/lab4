@@ -1,0 +1,164 @@
+body {
+    background-image: url(images2.jpg);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.dark-theme nav a {
+    color: #4da6ff;
+}
+
+#themeToggle {
+    padding: 8px 16px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dark-theme #themeToggle {
+    background-color: #4da6ff;
+    color: #121212;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.dark-theme .answer {
+    background-color: #333;
+}
+
+.answer.visible {
+    display: block;
+}
+
+.question {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.dark-theme .question {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dark-theme form {
+    background-color: #222;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#response {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9f7ef;
+    border-radius: 4px;
+    display: none;
+}
+
+.dark-theme #response {
+    background-color: #1a3a2a;
+}
+
+#userList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#userList li {
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+}
+
+.dark-theme #userList li {
+    background-color: #333;
+}
+
+#loadUsersBtn {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.dark-theme #loadUsersBtn {
+    background-color: #4da6ff;
+    color: #121212;
+}
+
+#headerClock {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.2em;
+}
